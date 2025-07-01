@@ -7,19 +7,17 @@
 </head>
 <body class="fondo-animado">
 
-  <script>
-    // Contraseña antes de cargar cualquier dato
-   const claveAcceso = "Admin2025";
-let password = prompt("Ingrese la contraseña para acceder:");
+ <script>
+  const claveAcceso = "Admin2025";
+  let password = prompt("Ingrese la contraseña para acceder:");
 
-// Limpiar espacios y convertir a mayúsculas para que sea más tolerante
-password = password ? password.trim() : "";
+  password = password ? password.trim() : "";
 
-if (password !== claveAcceso) {
-  alert("Contraseña incorrecta. No tienes permiso.");
-  window.location.href = "index.html";
-}
-
+  if (password !== claveAcceso) {
+    alert("Contraseña incorrecta. No tienes permiso.");
+    window.location.href = "index.html";
+  }
+</script>
   <nav>
     <div class="logo">Snacksmente</div>
     <ul class="nav-links">

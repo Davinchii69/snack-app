@@ -186,7 +186,7 @@ const snacks = {
     resultadoDiv.scrollIntoView({ behavior: 'smooth' });
   
     datosUsuario.snackFinal = resultado.nombre;
-    guardarEnGoogleSheet(datosUsuario);
+    guardarEnFirestore(datosUsuario);
   }
 //fin
 
@@ -261,19 +261,28 @@ function irAlInicio() {
         }
       });
     });
-    
-   function guardarEnGoogleSheet(datos) {
-  return fetch("https://script.google.com/macros/s/AKfycbwQWx3khM3BmaMRpaP5XeYnqwCZ-h0bS9W89ylG5ICGlHMsTI2fOPZvWTDbV2fNibDb/exec", {
-    method: "POST",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
-    body: JSON.stringify(datos)
+
+// Guarda el usuario y su snack en Firestore
+function guardarEnFirestore(datos) {
+  db.collection("respuestas").add({
+    nombre: datos.nombre,
+    emocion: datos.emocion,
+    sabor: datos.sabor,
+    tipo: datos.tipo,
+    snackFinal: datos.snackFinal,
+    fecha: new Date()
   })
-  .then(res => res.text())
-  .then(respuesta => {
-    console.log("Datos enviados:", respuesta);
+  .then((docRef) => {
+    console.log("Datos guardados con ID: ", docRef.id);
   })
-  .catch(err => {
-    console.error("Error al enviar datos:", err);
-    throw err;
+  .catch((error) => {
+    console.error("Error al guardar en Firestore: ", error);
   });
 }
+
+
+  
+
+
+
+ 

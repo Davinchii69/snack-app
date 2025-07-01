@@ -262,20 +262,23 @@ function irAlInicio() {
       });
     });
     
-    /*guarda el usuario y su snack a google sheets*/ 
-    function guardarEnGoogleSheet(datos) {
-      fetch("https://script.google.com/macros/s/AKfycbyK4mKPragXZU-4ObRDNo2o6TMSJexmQIlEsjMCjSXSNRYWW_ZY9z68epfUtPSqGtgR/exec", {
-        method: "POST",
-        body: JSON.stringify(datos),
-        headers: {
-          "Content-Type": "application/json"
-        }
-      })
-      .then(res => res.text())
-      .then(respuesta => {
-        console.log("Datos enviados:", respuesta);
-      })
-      .catch(err => {
-        console.error("Error al enviar datos:", err);
-      });
+   function guardarEnGoogleSheet(datos) {
+  const proxyURL = "https://corsproxy.io/?" + encodeURIComponent(
+    "https://script.google.com/macros/s/AKfycbwQWx3khM3BmaMRpaP5XeYnqwCZ-h0bS9W89ylG5ICGlHMsTI2fOPZvWTDbV2fNibDb/exec"
+  );
+
+  fetch(proxyURL, {
+    method: "POST",
+    body: JSON.stringify(datos),
+    headers: {
+      "Content-Type": "application/json"
     }
+  })
+  .then(res => res.text())
+  .then(respuesta => {
+    console.log("✅ Datos enviados:", respuesta);
+  })
+  .catch(err => {
+    console.error("❌ Error al enviar datos:", err);
+  });
+}

@@ -186,7 +186,7 @@ const snacks = {
     resultadoDiv.scrollIntoView({ behavior: 'smooth' });
   
     datosUsuario.snackFinal = resultado.nombre;
-    guardarEnGoogleSheet(datosUsuario);
+    guardarEnFirestore(datosUsuario);
   }
 //fin
 

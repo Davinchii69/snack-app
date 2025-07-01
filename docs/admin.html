@@ -9,13 +9,16 @@
 
   <script>
     // Contraseña antes de cargar cualquier dato
-    const claveAcceso = "Admin2025";
-    const password = prompt("Ingrese la contraseña para acceder:");
-    if (password !== claveAcceso) {
-      alert("Contraseña incorrecta. No tienes permiso.");
-      window.location.href = "index.html";
-    }
-  </script>
+   const claveAcceso = "Admin2025";
+let password = prompt("Ingrese la contraseña para acceder:");
+
+// Limpiar espacios y convertir a mayúsculas para que sea más tolerante
+password = password ? password.trim() : "";
+
+if (password !== claveAcceso) {
+  alert("Contraseña incorrecta. No tienes permiso.");
+  window.location.href = "index.html";
+}
 
   <nav>
     <div class="logo">Snacksmente</div>

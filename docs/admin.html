@@ -30,6 +30,16 @@
     </table>
   </div>
 
+  <script>
+  const claveAcceso = "Snacks.2025";
+
+  const password = prompt("Ingrese la contraseña para acceder:");
+  if (password !== claveAcceso) {
+    alert("Contraseña incorrecta. No tienes permiso.");
+    window.location.href = "index.html";
+  }
+</script>
+
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
   <script>

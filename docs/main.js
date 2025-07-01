@@ -263,7 +263,7 @@ function irAlInicio() {
     });
     
    function guardarEnGoogleSheet(datos) {
-  return fetch("https://script.google.com/macros/s/AKfycbzrBBP6mky2Kw5inYaRHxd137Zbee5ALmiQ2YVOAxSlbJhuuDAa-FB60PC1pR2wLVND/exec", {
+  return fetch("https://script.google.com/macros/s/AKfycbwQWx3khM3BmaMRpaP5XeYnqwCZ-h0bS9W89ylG5ICGlHMsTI2fOPZvWTDbV2fNibDb/exec", {
     method: "POST",
     headers: { "Content-Type": "text/plain;charset=utf-8" },
     body: JSON.stringify(datos)

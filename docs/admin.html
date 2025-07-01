@@ -2,28 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Panel de Respuestas</title>
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+  <title>Respuestas Registradas</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1 style="text-align:center;">📊 Panel de Respuestas</h1>
+<body class="fondo-animado">
+  <nav>
+    <div class="logo">Snacksmente</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+  </nav>
 
-  <div id="loginBox" style="text-align:center; margin:30px;">
-    <input type="password" id="passwordInput" placeholder="Ingresa contraseña" style="padding:8px;">
-    <button onclick="verificarClave()" style="padding:8px 12px;">Entrar</button>
-    <p id="errorMsg" style="color:red; display:none;">❌ Contraseña incorrecta</p>
-  </div>
-
-  <div id="adminPanel" style="display:none; padding:20px;">
-    <table id="tablaRespuestas" class="display" style="width:100%">
+  <div class="container">
+    <h1 style="color:white;">📊 Respuestas Registradas</h1>
+    <table id="tablaRespuestas" class="mi-tabla">
       <thead>
         <tr>
           <th>Nombre</th>
           <th>Emoción</th>
           <th>Sabor</th>
           <th>Tipo</th>
-          <th>Snack</th>
+          <th>Snack Final</th>
           <th>Fecha</th>
         </tr>
       </thead>
@@ -31,14 +30,8 @@
     </table>
   </div>
 
-  <!-- DataTables + jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
-  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-
   <script>
     const firebaseConfig = {
       apiKey: "AIzaSyCgCbALyNlxS-HWCwjmH66XUIyCN3UajAA",
@@ -49,40 +42,26 @@
       appId: "1:137149782969:web:09b4142e99237350d67468",
       measurementId: "G-NMGT2LC6XW"
     };
-    const app = firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
 
-    function verificarClave() {
-      const clave = document.getElementById('passwordInput').value;
-      if (clave === 'snacks2025') {
-        document.getElementById('loginBox').style.display = 'none';
-        document.getElementById('adminPanel').style.display = 'block';
-        cargarDatosEnTabla();
-      } else {
-        document.getElementById('errorMsg').style.display = 'block';
-      }
-    }
-
-    function cargarDatosEnTabla() {
-      const tabla = $('#tablaRespuestas').DataTable();
-      db.collection("respuestas").orderBy("fecha", "desc").get()
-        .then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-            const d = doc.data();
-            tabla.row.add([
-              d.nombre,
-              d.emocion,
-              d.sabor,
-              d.tipo,
-              d.snackFinal,
-              new Date(d.fecha.seconds * 1000).toLocaleString()
-            ]).draw(false);
-          });
-        })
-        .catch((error) => {
-          console.error("Error cargando datos: ", error);
-        });
-    }
+    // Cargar datos de Firestore en tabla
+    db.collection("respuestas").orderBy("fecha", "desc").get().then((querySnapshot) => {
+      const tbody = document.querySelector("#tablaRespuestas tbody");
+      querySnapshot.forEach((doc) => {
+        const d = doc.data();
+        const fila = document.createElement("tr");
+        fila.innerHTML = `
+          <td>${d.nombre}</td>
+          <td>${d.emocion}</td>
+          <td>${d.sabor}</td>
+          <td>${d.tipo}</td>
+          <td>${d.snackFinal}</td>
+          <td>${new Date(d.fecha.toDate()).toLocaleString()}</td>
+        `;
+        tbody.appendChild(fila);
+      });
+    });
   </script>
 </body>
 </html>

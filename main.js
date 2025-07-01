@@ -261,4 +261,21 @@ function irAlInicio() {
         }
       });
     });
-    
+
+// Guarda el usuario y su snack en Firestore
+function guardarEnFirestore(datos) {
+  db.collection("respuestas").add({
+    nombre: datos.nombre,
+    emocion: datos.emocion,
+    sabor: datos.sabor,
+    tipo: datos.tipo,
+    snackFinal: datos.snackFinal,
+    fecha: new Date()
+  })
+  .then((docRef) => {
+    console.log("Datos guardados con ID: ", docRef.id);
+  })
+  .catch((error) => {
+    console.error("Error al guardar en Firestore: ", error);
+  });
+}

@@ -127,47 +127,6 @@
     <div class="result" id="resultado" style="display:none;"></div>
   </div>
 
-<!-- 📊 Panel de Respuestas -->
-<section id="adminPanel" style="margin: 30px 0;">
-  <h2>📊 Respuestas registradas</h2>
-  <table id="tablaRespuestas" class="display" style="width:100%">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Emoción</th>
-        <th>Sabor</th>
-        <th>Tipo</th>
-        <th>Snack</th>
-        <th>Fecha</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</section>
-
-<!-- 📊 Panel de Respuestas -->
-<section id="adminPanel" style="margin: 30px 0;">
-  <h2>📊 Respuestas registradas</h2>
-  <table id="tablaRespuestas" class="display" style="width:100%">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Emoción</th>
-        <th>Sabor</th>
-        <th>Tipo</th>
-        <th>Snack</th>
-        <th>Fecha</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</section>
-
-<!-- DataTables + jQuery -->
-<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-
 <!-- Firebase SDK -->
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
@@ -187,33 +146,6 @@
   // Inicializar Firebase
   const app = firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore();
-</script>
-
-<script>
-  // 📥 Cargar datos en DataTable desde Firestore
-  function cargarDatosEnTabla() {
-    const tabla = $('#tablaRespuestas').DataTable();
-
-    db.collection("respuestas").orderBy("fecha", "desc").get()
-      .then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          const d = doc.data();
-          tabla.row.add([
-            d.nombre,
-            d.emocion,
-            d.sabor,
-            d.tipo,
-            d.snackFinal,
-            new Date(d.fecha.seconds * 1000).toLocaleString()
-          ]).draw(false);
-        });
-      })
-      .catch((error) => {
-        console.error("Error cargando datos: ", error);
-      });
-  }
-
-  document.addEventListener('DOMContentLoaded', cargarDatosEnTabla);
 </script>
   
   <script src="main.js"></script>

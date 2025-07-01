@@ -263,22 +263,21 @@ function irAlInicio() {
     });
     
    function guardarEnGoogleSheet(datos) {
-  const proxyURL = "https://corsproxy.io/?" + encodeURIComponent(
-    "https://script.google.com/macros/s/AKfycbwQWx3khM3BmaMRpaP5XeYnqwCZ-h0bS9W89ylG5ICGlHMsTI2fOPZvWTDbV2fNibDb/exec"
-  );
+  const proxyUrl = "https://corsproxy.io/?";
+  const scriptUrl = "https://script.google.com/macros/s/AKfycbwQWx3khM3BmaMRpaP5XeYnqwCZ-h0bS9W89ylG5ICGlHMsTI2fOPZvWTDbV2fNibDb/exec";
 
-  fetch(proxyURL, {
+  fetch(proxyUrl + encodeURIComponent(scriptUrl), {
     method: "POST",
-    body: JSON.stringify(datos),
     headers: {
       "Content-Type": "application/json"
-    }
+    },
+    body: JSON.stringify(datos)
   })
-  .then(res => res.text())
-  .then(respuesta => {
-    console.log("✅ Datos enviados:", respuesta);
-  })
-  .catch(err => {
-    console.error("❌ Error al enviar datos:", err);
-  });
+    .then(res => res.text())
+    .then(respuesta => {
+      console.log("✅ Datos enviados correctamente:", respuesta);
+    })
+    .catch(err => {
+      console.error("❌ Error al enviar datos:", err);
+    });
 }

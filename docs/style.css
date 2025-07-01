@@ -853,3 +853,40 @@ header p {
   100% { background-position: 0% 50%; }
 }
 
+.mi-tabla {
+  width: 95%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  font-family: 'Poppins', sans-serif;
+  background: white;
+}
+
+.mi-tabla thead {
+  background-color: #ff9a9e;
+  color: white;
+  text-align: left;
+}
+
+.mi-tabla th, .mi-tabla td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mi-tabla tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.mi-tabla tbody tr:hover {
+  background-color: #ffe2e6;
+  transition: 0.3s;
+}
+
+.container h1 {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 600;
+}

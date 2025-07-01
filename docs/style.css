@@ -836,3 +836,20 @@ header p {
       margin-top: 0.2rem;
     }
   }
+
+/*admin*/
+.fondo-animado {
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: moverFondo 15s ease infinite;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes moverFondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

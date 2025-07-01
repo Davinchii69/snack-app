@@ -264,7 +264,7 @@ function irAlInicio() {
     
     /*guarda el usuario y su snack a google sheets*/ 
     function guardarEnGoogleSheet(datos) {
-      fetch("https://script.google.com/macros/s/AKfycbzrBBP6mky2Kw5inYaRHxd137Zbee5ALmiQ2YVOAxSlbJhuuDAa-FB60PC1pR2wLVND/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbyK4mKPragXZU-4ObRDNo2o6TMSJexmQIlEsjMCjSXSNRYWW_ZY9z68epfUtPSqGtgR/exec", {
         method: "POST",
         body: JSON.stringify(datos),
         headers: {

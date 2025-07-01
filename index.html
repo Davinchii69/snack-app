@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre qué snack va mejor con tus emociones. Triste, alegre, enojado o ansioso, ¡siempre hay un snack para ti!">
+  <meta property="og:title" content="Snacksmente">
+  <meta property="og:description" content="Conecta tus emociones con snacks. Una experiencia sabrosa y emocional.">
+  <meta property="og:image" content="URL_de_imagen_destacada.jpg">
+
+  <title>SNACKSMENTE - Conectamos tus emociones con snacks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo animate-logo" onclick="irAlInicio()" style="cursor:pointer;">Snacksmente</div>
+    <div class="nav-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navMenu">
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div id="menuOverlay" class="menu-overlay"></div>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Un snack para cada emoción 💗</h1>
+      <p>Según cómo te sientas, tenemos un snack para ti 😋👇</p>
+      <button class="button" onclick="empezarCuestionario()">¡Quiero saber mi snack!</button>
+    </div>
+  </section>
+
+  <div class="emociones-objetivos">
+    <div class="objetivo-card triste-theme">
+      <span class="emoji">😔</span>
+      <strong>Tristeza:</strong> Reconfortar, elevar el ánimo, aumentar serotonina.
+    </div>
+    <div class="objetivo-card alegre-theme">
+      <span class="emoji">😄</span>
+      <strong>Alegría:</strong> Mantener una energía alta y celebrar sin exceso.
+    </div>
+    <div class="objetivo-card enojado-theme">
+      <span class="emoji">😠</span>
+      <strong>Enojo:</strong> Calmar la tensión, relajar y favorecer el autocontrol.
+    </div>
+    <div class="objetivo-card envidioso-theme">
+      <span class="emoji">😒</span>
+      <strong>Envidia:</strong> Elevar la autoestima, redirigir el enfoque.
+    </div>
+    <div class="objetivo-card ansioso-theme">
+      <span class="emoji">😰</span>
+      <strong>Ansiedad:</strong> Calmar la mente, ofrecer tranquilidad y calma.
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section" id="formSection" style="display: none;">
+      <form id="snackForm">
+
+        <div class="question active" id="nombrePregunta">
+          <h3>¿Cuál es tu nombre?</h3>
+          <input type="text" id="nombreUsuario" placeholder="Escribe tu nombre aquí" class="option-box" style="width: 80%; max-width: 300px;">
+          <br><br>
+          <button type="button" class="button" onclick="guardarNombre()">Siguiente</button>
+        </div>
+
+        <div class="question" id="q1">
+          <h3>¿Cómo te sientes hoy?</h3>
+          <input type="radio" id="triste" name="emocion" value="triste">
+          <label class="option-box" for="triste">😔 Triste</label>
+          <input type="radio" id="alegre" name="emocion" value="alegre">
+          <label class="option-box" for="alegre">😄 Alegre</label>
+          <input type="radio" id="enojado" name="emocion" value="enojado">
+          <label class="option-box" for="enojado">😠 Enojado</label>
+          <input type="radio" id="ansioso" name="emocion" value="ansioso">
+          <label class="option-box" for="ansioso">😰 Ansioso</label>
+          <input type="radio" id="envidioso" name="emocion" value="envidioso">
+          <label class="option-box" for="envidioso">😒 Envidioso</label><br>
+          <button type="button" class="button" onclick="nextQuestion()">Siguiente</button>
+        </div>
+
+        <div class="question" id="q2">
+            <h3>¿Qué tipo de sabor te apetece?</h3>
+          
+            <div class="opciones-boxes">
+              <input type="radio" id="dulce" name="sabor" value="dulce">
+              <label class="option-box" for="dulce">🍬 Dulce</label>
+          
+              <input type="radio" id="salado" name="sabor" value="salado">
+              <label class="option-box" for="salado">🧂 Salado</label>
+          
+              <input type="radio" id="refrescante" name="sabor" value="refrescante">
+              <label class="option-box" for="refrescante">❄️ Refrescante</label>
+            </div>
+          
+            <div style="margin-top: 1rem;">
+                <button type="button" class="button" onclick="nextQuestion()">Siguiente</button>
+              </div>
+            </div>
+            
+
+          <div class="question" id="q3">
+            <h3>¿Qué tipo de snack prefieres?</h3>
+            <input type="radio" id="crujiente" name="tipo" value="crujiente">
+            <label class="option-box" for="crujiente">🍪 Crujiente</label>
+          
+            <input type="radio" id="esponjoso" name="tipo" value="esponjoso">
+            <label class="option-box" for="esponjoso">🧁 Esponjoso</label>
+          
+            <input type="radio" id="frio" name="tipo" value="frio">
+            <label class="option-box" for="frio">🍧 Frío</label>
+          
+            <input type="radio" id="bebida" name="tipo" value="bebida">
+            <label class="option-box" for="bebida">🥤 Bebida</label>
+          
+            <button type="button" class="button" onclick="mostrarResultado()">Ver mi snack</button>
+          </div>
+      </form>
+    </section>
+
+    <div class="result" id="resultado" style="display:none;"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

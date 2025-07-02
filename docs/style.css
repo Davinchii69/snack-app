@@ -839,21 +839,23 @@ header p {
 
 /*footer*/
 .footer {
-  background: #fef3c7;
+  width: 100%;
+  background: #fff8dc;
   color: #1f2937;
   padding: 3rem 1rem;
   margin-top: 4rem;
   box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+  border-top: 2px solid #fbbf24;
 }
 
 .footer-container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
+  text-align: center;
 }
 
 .footer h1 {
-  text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
@@ -867,13 +869,13 @@ header p {
 }
 
 .footer p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.7;
   margin-top: 0.5rem;
   color: #374151;
 }
 
-/* Responsivo */
+/* Responsive */
 @media (max-width: 768px) {
   .footer h1 {
     font-size: 1.6rem;
@@ -887,4 +889,3 @@ header p {
     font-size: 0.95rem;
   }
 }
-

@@ -62,7 +62,7 @@ function mostrarResultado() {
 const snacks = {
     triste: {
       dulce: {
-        crujiente: { nombre: "Galletas con chispas de chocolate", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Galletas con chispas de chocolate", img: "galleta1.jpg" },
         esponjoso: { nombre: "Cupcake sencillo de vainilla o chocolate", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
         bebida: { nombre: "Chocolate caliente suave", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Chocobananos caseros", img: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" }

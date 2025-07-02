@@ -5,7 +5,6 @@
   <title>Respuestas Registradas</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* RESET Y BASE */
     * {
       margin: 0;
       padding: 0;
@@ -23,12 +22,10 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-
-    /* NAVEGACIÓN */
     nav {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
-      padding: 2rem 2rem;
+      padding: 0.7rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -39,26 +36,36 @@
       z-index: 100;
     }
     .logo {
-      font-size: 3rem;
+      font-size: 2rem;
       font-weight: 700;
       color: #111827;
       position: relative;
+      animation: logoFadeInUp 1s ease-out forwards;
     }
     .logo::after {
       content: '';
       position: absolute;
-      bottom: 2px;
+      bottom: 4px;
       left: 50%;
       transform: translateX(-50%);
-      width: 120px;
-      height: 4px;
+      width: 0%;
+      height: 5px;
       background: linear-gradient(90deg, #fbbf24, #f59e0b);
       border-radius: 2px;
-      animation: yellowLineGlow 2s ease-in-out infinite alternate;
+      animation: underlineExpand 1.5s ease-out forwards, yellowLineGlow 2s ease-in-out infinite alternate;
+      animation-delay: 0.5s, 1.5s;
     }
     @keyframes yellowLineGlow {
-     100% { box-shadow: 0 0 5px rgba(251, 191, 36, 0.5); }
+      0% { box-shadow: 0 0 5px rgba(251, 191, 36, 0.5); }
       100% { box-shadow: 0 0 15px rgba(251, 191, 36, 0.8); }
+    }
+    @keyframes underlineExpand {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+    @keyframes logoFadeInUp {
+      0% { opacity: 0; transform: translateY(-20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
     .nav-links {
       display: flex;
@@ -69,7 +76,7 @@
     .nav-links a {
       color: #374151;
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.5rem;
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
     }
@@ -77,15 +84,13 @@
       color: #f59e0b;
       background: rgba(251, 191, 36, 0.1);
     }
-
-    /* CONTENIDO */
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 2rem;
     }
     h1 {
-      color: rgb(87, 87, 87);
+      color: rgb(100, 100, 100);
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
@@ -114,8 +119,6 @@
       background-color: #ffe2e6;
       transition: 0.3s;
     }
-
-    /* RESPONSIVE AJUSTES */
     @media (max-width: 480px) {
       nav {
         padding: 1rem 1.5rem;
@@ -124,8 +127,8 @@
         font-size: 2.6rem;
       }
       .logo::after {
-        width: 140px;
         height: 5px;
+        width: 140px;
       }
       .nav-links a {
         font-size: 1.4rem;
@@ -196,7 +199,6 @@
     };
     firebase.initializeApp(firebaseConfig);
     const db = firebase.firestore();
-
     const tbody = document.querySelector("#tablaRespuestas tbody");
     db.collection("respuestas").orderBy("fecha", "desc").onSnapshot((querySnapshot) => {
       tbody.innerHTML = "";

@@ -837,5 +837,54 @@ header p {
     }
   }
 
-/*admin*/
+/*footer*/
+.footer {
+  background: #fef3c7;
+  color: #1f2937;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #f59e0b;
+}
+
+.footer h2 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: #d97706;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+  color: #374151;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer h1 {
+    font-size: 1.6rem;
+  }
+
+  .footer h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer p {
+    font-size: 0.95rem;
+  }
+}
 

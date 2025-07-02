@@ -36,7 +36,7 @@
       z-index: 100;
     }
     .logo {
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 700;
       color: #111827;
       position: relative;
@@ -45,7 +45,7 @@
     .logo::after {
       content: '';
       position: absolute;
-      bottom: 4px;
+      bottom: 2px;
       left: 50%;
       transform: translateX(-50%);
       width: 0%;
@@ -76,7 +76,7 @@
     .nav-links a {
       color: #374151;
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
     }
@@ -90,7 +90,7 @@
       padding: 2rem;
     }
     h1 {
-      color: rgb(100, 100, 100);
+      color: rgb(86, 86, 86);
       font-size: 2.5rem;
       text-align: center;
       margin-bottom: 2rem;
@@ -137,86 +137,95 @@
       h1 {
         font-size: 2.2rem;
       }
-      .mi-tabla th, .mi-tabla td {
-        font-size: 1.2rem;
-        padding: 12px 10px;
+      .mi-tabla, .mi-tabla thead, .mi-tabla tbody, .mi-tabla th, .mi-tabla td, .mi-tabla tr {
+        display: block;
+      }
+      .mi-tabla thead tr {
+        display: none;
+      }
+      .mi-tabla tbody tr {
+        margin-bottom: 1rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        padding: 1rem;
+      }
+      .mi-tabla td {
+        padding: 0.6rem 0;
+        font-size: 1.1rem;
+        border-bottom: none;
+        display: flex;
+        justify-content: space-between;
+      }
+      .mi-tabla td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #374151;
       }
     }
   </style>
 </head>
 <body class="fondo-animado">
-  <script>
-    if (!localStorage.getItem("adminAutenticado")) {
-      const claveAcceso = "Admin2025";
-      let password = prompt("Ingrese la contraseña para acceder:");
-      password = password ? password.trim() : "";
-      if (password !== claveAcceso) {
-        alert("Contraseña incorrecta. No tienes permiso.");
-        window.location.href = "index.html";
-      } else {
-        localStorage.setItem("adminAutenticado", true);
-      }
-    }
-  </script>
-
-  <nav>
-    <div class="logo">Snacksmente</div>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-    </ul>
-  </nav>
-
-  <div class="container">
-    <h1>📊 Respuestas Registradas</h1>
-    <div class="tabla-contenedor">
-      <table id="tablaRespuestas" class="mi-tabla">
-        <thead>
-          <tr>
-            <th>Nombre</th>
-            <th>Emoción</th>
-            <th>Sabor</th>
-            <th>Tipo</th>
-            <th>Snack Final</th>
-            <th>Fecha</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+<script>
+if (!localStorage.getItem("adminAutenticado")) {
+  const claveAcceso = "Admin2025";
+  let password = prompt("Ingrese la contraseña para acceder:");
+  if (password !== claveAcceso) {
+    alert("Contraseña incorrecta. No tienes permiso.");
+    window.location.href = "index.html";
+  } else {
+    localStorage.setItem("adminAutenticado", true);
+  }
+}
+</script>
+<nav>
+  <div class="logo">Snacksmente</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <h1>📊 Respuestas Registradas</h1>
+  <div class="tabla-contenedor">
+    <table id="tablaRespuestas" class="mi-tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Emoción</th>
+          <th>Sabor</th>
+          <th>Tipo</th>
+          <th>Snack Final</th>
+          <th>Fecha</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
   </div>
-
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
-  <script>
-    const firebaseConfig = {
-      apiKey: "AIzaSyCgCbALyNlxS-HWCwjmH66XUIyCN3UajAA",
-      authDomain: "snacksmente.firebaseapp.com",
-      projectId: "snacksmente",
-      storageBucket: "snacksmente.firebasestorage.app",
-      messagingSenderId: "137149782969",
-      appId: "1:137149782969:web:09b4142e99237350d67468",
-      measurementId: "G-NMGT2LC6XW"
-    };
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.firestore();
-    const tbody = document.querySelector("#tablaRespuestas tbody");
-    db.collection("respuestas").orderBy("fecha", "desc").onSnapshot((querySnapshot) => {
-      tbody.innerHTML = "";
-      querySnapshot.forEach((doc) => {
-        const d = doc.data();
-        const fila = document.createElement("tr");
-        fila.innerHTML = `
-          <td>${d.nombre}</td>
-          <td>${d.emocion}</td>
-          <td>${d.sabor}</td>
-          <td>${d.tipo}</td>
-          <td>${d.snackFinal}</td>
-          <td>${new Date(d.fecha.toDate()).toLocaleString()}</td>
-        `;
-        tbody.appendChild(fila);
-      });
-    });
-  </script>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig = { apiKey: "AIzaSyCgCbALyNlxS-HWCwjmH66XUIyCN3UajAA", authDomain: "snacksmente.firebaseapp.com", projectId: "snacksmente", storageBucket: "snacksmente.appspot.com", messagingSenderId: "137149782969", appId: "1:137149782969:web:09b4142e99237350d67468", measurementId: "G-NMGT2LC6XW" };
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const tbody = document.querySelector("#tablaRespuestas tbody");
+db.collection("respuestas").orderBy("fecha", "desc").onSnapshot((querySnapshot) => {
+  tbody.innerHTML = "";
+  querySnapshot.forEach((doc) => {
+    const d = doc.data();
+    const fila = document.createElement("tr");
+    fila.innerHTML = `
+      <td data-label="Nombre">${d.nombre}</td>
+      <td data-label="Emoción">${d.emocion}</td>
+      <td data-label="Sabor">${d.sabor}</td>
+      <td data-label="Tipo">${d.tipo}</td>
+      <td data-label="Snack Final">${d.snackFinal}</td>
+      <td data-label="Fecha">${new Date(d.fecha.toDate()).toLocaleString()}</td>
+    `;
+    tbody.appendChild(fila);
+  });
+});
+</script>
 </body>
 </html>
 

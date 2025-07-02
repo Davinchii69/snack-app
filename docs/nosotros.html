@@ -13,11 +13,13 @@
       animation: moverFondo 15s ease infinite;
       min-height: 100vh;
     }
+
     @keyframes moverFondo {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
     nav {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
@@ -31,6 +33,7 @@
       top: 0;
       z-index: 100;
     }
+
     .logo {
       font-size: 2.2rem;
       font-weight: 700;
@@ -39,6 +42,7 @@
       animation: logoFadeInUp 1s ease-out forwards;
       text-decoration: none;
     }
+
     .logo::after {
       content: '';
       position: absolute;
@@ -52,24 +56,29 @@
       animation: underlineExpand 1.5s ease-out forwards, yellowLineGlow 2s ease-in-out infinite alternate;
       animation-delay: 0.5s, 1.5s;
     }
+
     @keyframes yellowLineGlow {
       0% { box-shadow: 0 0 5px rgba(251, 191, 36, 0.5); }
       100% { box-shadow: 0 0 15px rgba(251, 191, 36, 0.8); }
     }
+
     @keyframes underlineExpand {
       0% { width: 0%; }
       100% { width: 100%; }
     }
+
     @keyframes logoFadeInUp {
       0% { opacity: 0; transform: translateY(-20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+
     .nav-links {
       display: flex;
       gap: 2rem;
       list-style: none;
       font-weight: 600;
     }
+
     .nav-links a {
       color: #374151;
       text-decoration: none;
@@ -77,21 +86,62 @@
       padding: 0.5rem 1rem;
       border-radius: 0.5rem;
     }
+
     .nav-links a:hover {
       color: #f59e0b;
       background: rgba(251, 191, 36, 0.1);
     }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        border-radius: 10px;
+        flex-direction: column;
+        width: 150px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+      }
+
+      .nav-links.show {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 2rem;
       text-align: center;
     }
+
     h1 {
       color: rgb(86, 86, 86);
       font-size: 2.5rem;
       margin-bottom: 2rem;
     }
+
     .about-section {
       background: rgba(255,255,255,0.95);
       border-radius: 20px;
@@ -99,11 +149,13 @@
       margin-top: 2rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
+
     .about-section h2 {
       font-size: 2rem;
       color: #111827;
       margin-bottom: 1rem;
     }
+
     .about-section p {
       font-size: 1.2rem;
       color: #333;
@@ -111,57 +163,53 @@
       margin-bottom: 1.5rem;
     }
 
-    @media (max-width: 480px) {
-  .logo {
-    font-size: 4rem;
-  }
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #F5B7B1;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
-  .logo::after {
-    height: 6px;
-    width: 140px;
-  }
-
-  .nav-links a {
-    font-size: 4rem;
-    padding: 0.7rem 1.2rem;
-  }
-}
-
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #F5B7B1; /* rosa pastel o el que uses */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #E59866;
-}
+    .button:hover {
+      background-color: #E59866;
+    }
   </style>
 </head>
-<body class="fondo-animado">
-<nav>
-  <a href="index.html" class="logo">Snacksmente</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Inicio</a></li>
-    <li><a href="nosotros.html">Nosotros</a></li>
-  </ul>
-</nav>
-<div class="container">
-  <h1>✨ Sobre Nosotros</h1>
-  <div class="about-section">
-    <h2>¿Quiénes Somos?</h2>
-    <p>Snacksmente es una iniciativa que busca conectar tu estado emocional con pequeños momentos dulces y salados, seleccionados con intención para reconfortarte. Creemos que un snack elegido con cariño puede cambiar tu día.</p>
-    <h2>Nuestra Misión</h2>
-    <p>Ayudarte a identificar tu emoción y brindarte una opción de snack que se adapte a cómo te sientes. Combinamos bienestar emocional con alimentos accesibles y caseros para ofrecerte una experiencia personalizada y memorable.</p>
-    <h2>Visión</h2>
-    <p>Convertirnos en la guía emocional-snack favorita de los usuarios, promoviendo momentos de autocuidado con sabor y sentido, inspirando a más personas a consentirse y atender su bienestar desde lo cotidiano.</p>
+<body>
+  <nav>
+    <a href="index.html" class="logo">Snacksmente</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>✨ Sobre Nosotros</h1>
+    <div class="about-section">
+      <h2>¿Quiénes Somos?</h2>
+      <p>Snacksmente es una iniciativa que busca conectar tu estado emocional con pequeños momentos dulces y salados, seleccionados con intención para reconfortarte. Creemos que un snack elegido con cariño puede cambiar tu día.</p>
+      <h2>Nuestra Misión</h2>
+      <p>Ayudarte a identificar tu emoción y brindarte una opción de snack que se adapte a cómo te sientes. Combinamos bienestar emocional con alimentos accesibles y caseros para ofrecerte una experiencia personalizada y memorable.</p>
+      <h2>Visión</h2>
+      <p>Convertirnos en la guía emocional-snack favorita de los usuarios, promoviendo momentos de autocuidado con sabor y sentido, inspirando a más personas a consentirse y atender su bienestar desde lo cotidiano.</p>
+    </div>
   </div>
-</div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

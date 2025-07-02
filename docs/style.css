@@ -890,3 +890,37 @@ header p {
   margin-top: 20px;
   font-weight: 600;
 }
+
+/* 📱 Ajuste de tabla para pantallas pequeñas (vertical) */
+@media (max-width: 480px) {
+  .mi-tabla {
+    font-size: 1.1rem;
+    min-width: 100%; /* que se adapte al ancho disponible */
+  }
+
+  .mi-tabla th, .mi-tabla td {
+    padding: 14px 10px;
+  }
+
+  .tabla-contenedor {
+    overflow-x: auto;
+  }
+
+  .container h1 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+
+  nav {
+    padding: 0.6rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}

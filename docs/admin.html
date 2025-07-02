@@ -8,15 +8,19 @@
 <body class="fondo-animado">
 
  <script>
+  if (localStorage.getItem("adminAutenticado")) {
+  // ya autenticado
+} else {
   const claveAcceso = "Admin2025";
   let password = prompt("Ingrese la contraseña para acceder:");
-
   password = password ? password.trim() : "";
-
   if (password !== claveAcceso) {
     alert("Contraseña incorrecta. No tienes permiso.");
     window.location.href = "index.html";
+  } else {
+    localStorage.setItem("adminAutenticado", true);
   }
+}
 </script>
   <nav>
     <div class="logo">Snacksmente</div>

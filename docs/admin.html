@@ -63,22 +63,27 @@
     const db = firebase.firestore();
 
     // Cargar datos de Firestore en tabla
-    db.collection("respuestas").orderBy("fecha", "desc").get().then((querySnapshot) => {
-      const tbody = document.querySelector("#tablaRespuestas tbody");
-      querySnapshot.forEach((doc) => {
-        const d = doc.data();
-        const fila = document.createElement("tr");
-        fila.innerHTML = `
-          <td>${d.nombre}</td>
-          <td>${d.emocion}</td>
-          <td>${d.sabor}</td>
-          <td>${d.tipo}</td>
-          <td>${d.snackFinal}</td>
-          <td>${new Date(d.fecha.toDate()).toLocaleString()}</td>
-        `;
-        tbody.appendChild(fila);
-      });
-    });
+   const tbody = document.querySelector("#tablaRespuestas tbody");
+
+// Escuchar cambios en tiempo real
+db.collection("respuestas").orderBy("fecha", "desc").onSnapshot((querySnapshot) => {
+  // Limpiar tabla antes de volver a insertar datos
+  tbody.innerHTML = "";
+
+  querySnapshot.forEach((doc) => {
+    const d = doc.data();
+    const fila = document.createElement("tr");
+    fila.innerHTML = `
+      <td>${d.nombre}</td>
+      <td>${d.emocion}</td>
+      <td>${d.sabor}</td>
+      <td>${d.tipo}</td>
+      <td>${d.snackFinal}</td>
+      <td>${new Date(d.fecha.toDate()).toLocaleString()}</td>
+    `;
+    tbody.appendChild(fila);
+  });
+});
   </script>
 </body>
 </html>

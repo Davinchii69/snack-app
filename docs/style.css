@@ -846,6 +846,28 @@ header p {
   text-align: center;
 }
 
+.footer-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-card {
+  background: #ffffffcc; /* blanco semitransparente */
+  padding: 1rem 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(4px);
+  font-size: 0.95rem;
+  color: #1f2937;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.footer-card:hover {
+  transform: translateY(-4px);
+}
 .footer h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -880,3 +902,4 @@ header p {
     font-size: 0.95rem;
   }
 }
+

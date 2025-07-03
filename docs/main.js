@@ -105,60 +105,60 @@ const snacks = {
     enojado: {
       salado: {
         crujiente: { nombre: "Papas fritas caseras", img: "https://images.unsplash.com/photo-1606756796932-d9e5b0be7c0d?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Panecillos de ajo y queso", img: "https://images.unsplash.com/photo-1611066520394-648bb62d33d4?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Jugo de tomate con sal y limón", img: "https://images.unsplash.com/photo-1625940982222-19cddeba509b?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Rodajas de pepino con sal y limón", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
+        esponjoso: { nombre: "Pan de ajo y queso", img: "https://images.unsplash.com/photo-1611066520394-648bb62d33d4?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Jugo de sandía con sal y chile", img: "https://images.unsplash.com/photo-1625940982222-19cddeba509b?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Helado de chamoy", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
       },
       dulce: {
         crujiente: { nombre: "Galletas de avena", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Bizcocho de avena y miel", img: "https://images.unsplash.com/photo-1627616799764-3382d8d4e0b6?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Leche con cacao", img: "https://images.unsplash.com/photo-1571997478779-2c46b1dbbfc9?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Barras frías de avena con chispas", img: "https://images.unsplash.com/photo-1628191018703-dc0b6b9f5672?auto=format&fit=crop&w=600&q=80" }
+        esponjoso: { nombre: "Bizcocho de almendras", img: "https://images.unsplash.com/photo-1627616799764-3382d8d4e0b6?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Licuado de fresa", img: "https://images.unsplash.com/photo-1571997478779-2c46b1dbbfc9?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Yogurt de manzana", img: "https://images.unsplash.com/photo-1628191018703-dc0b6b9f5672?auto=format&fit=crop&w=600&q=80" }
       },
       refrescante: {
-        crujiente: { nombre: "Zanahorias baby frías", img: "https://images.unsplash.com/photo-1612541443764-2fd0c15fcf1a?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Polvorones con relleno", img: "https://images.unsplash.com/photo-1612541443764-2fd0c15fcf1a?auto=format&fit=crop&w=600&q=80" },
         esponjoso: { nombre: "Mousse frío de limón", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Agua de Jamaica", img: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Pepinos con yogurt", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        bebida: { nombre: "Agua de Jamaica con menta", img: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Ensalada de frutas", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
       }
     },
     ansioso: {
       dulce: {
         crujiente: { nombre: "Barrita de cereal con chocolate", img: "https://images.unsplash.com/photo-1589820296156-b74290ced394?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Magdalenas con chispitas", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Té relajante con miel", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Panqueques delgados con fruta enfriada", img: "https://images.unsplash.com/photo-1548943487-a2e4d1b046a2?auto=format&fit=crop&w=600&q=80" }
+        esponjoso: { nombre: "Cupcakes con chispitas", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Té con miel", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Waffles con crema", img: "https://images.unsplash.com/photo-1548943487-a2e4d1b046a2?auto=format&fit=crop&w=600&q=80" }
       },
       salado: {
-        crujiente: { nombre: "Tostaditas de pan con hummus", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Muffin salado de espinaca y queso", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Té frío sin azúcar", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Ensalada de garbanzos fría", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Tostadas de pan con aguacate", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
+        esponjoso: { nombre: "Pastelitos de carne", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Licuado de pepino con sal", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Banderillas de jamón y queso", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
       },
       refrescante: {
-        crujiente: { nombre: "Brochetas de fruta con chocolate", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Pastel de gelatina con fruta", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Agua saborizada con pepino y menta", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Yogur con miel y fruta", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Tutti frutti", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
+        esponjoso: { nombre: "Bizcocho de gelatina coon leche", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "licuado de piña", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Paleta de coco casera", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
       }
     },
     envidioso: {
       dulce: {
-        crujiente: { nombre: "Brochetas de fruta con vainilla", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Mini pastelitos", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Licuado de leche y pudín", img: "https://images.unsplash.com/photo-1576402187878-974f38e5dd03?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Flan o pudín hecho en casa", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Galletas de chocolate", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
+        esponjoso: { nombre: "Relampagos", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Licuado de banano", img: "https://images.unsplash.com/photo-1576402187878-974f38e5dd03?auto=format&fit=crop&w=600&q=80" },
+        frio: { nombre: "Flan casero", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
       },
       salado: {
-        crujiente: { nombre: "Barritas de cereal con frutos secos", img: "https://images.unsplash.com/photo-1576186726115-4a47c0b5c2f4?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Pretzel", img: "https://images.unsplash.com/photo-1576186726115-4a47c0b5c2f4?auto=format&fit=crop&w=600&q=80" },
         esponjoso: { nombre: "Muffins de queso", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Té verde con limón", img: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Jugo de tomate con sal", img: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Rollitos de jamón y queso", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
       },
       refrescante: {
-        crujiente: { nombre: "Chips de manzana", img: "https://images.unsplash.com/photo-1581382575301-8a1801a8d8d6?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Gelatina con crema", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Agua con frutas", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Galletas de manzana", img: "https://images.unsplash.com/photo-1581382575301-8a1801a8d8d6?auto=format&fit=crop&w=600&q=80" },
+        esponjoso: { nombre: "Rosca gelatina", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Jugo de avena", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Mousse de fruta", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
       }
     }

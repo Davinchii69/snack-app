@@ -65,15 +65,15 @@ const snacks = {
     triste: {
       dulce: {
         crujiente: { nombre: "Galletas con chispas de chocolate", img: "assets/galleta1.jpg" },
-        esponjoso: { nombre: "Cupcake sencillo de vainilla", img: "https://i.imgur.com/3pKLCn5.jpeg" },
-        bebida: { nombre: "Chocolate caliente", img: "https://i.imgur.com/qZXu5rQ.jpeg" },
-        frio: { nombre: "Chocobananos caseros", img: "https://i.imgur.com/6GCYuye.jpeg" }
+        esponjoso: { nombre: "Cupcake sencillo de chocolate", img: "assets/cupcake.jpg" },
+        bebida: { nombre: "Chocolate caliente", img: "assets/chocolatecaliente.jpg" },
+        frio: { nombre: "Chocobananos caseros", img: "assets/chocobanano.jpg" }
       },
       salado: {
-        crujiente: { nombre: "Galletas saladas con queso", img: "https://i.imgur.com/Mu24h0W.png" },
-        esponjoso: { nombre: "Muffin de queso suave", img: "https://i.imgur.com/6BOLebp.jpeg" },
-        bebida: { nombre: "Caldo suave", img: "https://i.imgur.com/6YDygVA.jpeg" },
-        frio: { nombre: "Yogur salado con pepino rallado", img: "https://i.imgur.com/fxqyLuF.jpeg" }
+        crujiente: { nombre: "Galletas saladas con queso", img: "assets/galletasqueso.png" },
+        esponjoso: { nombre: "Muffin de queso suave", img: "assets/muffinqueso.jpg" },
+        bebida: { nombre: "Caldo suave", img: "assets/caldosuave.jpg" },
+        frio: { nombre: "Yogur salado con pepino rallado", img: "assets/yogurtpepinos.jpg" }
       },
       refrescante: {
         crujiente: { nombre: "Barquillos con crema", img: "https://images.unsplash.com/photo-1587498231662-cf42ca1ab8b8?auto=format&fit=crop&w=600&q=80" },

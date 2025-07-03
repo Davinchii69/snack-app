@@ -66,31 +66,31 @@ const snacks = {
       dulce: {
         crujiente: { nombre: "Galletas con chispas de chocolate", img: "assets/galleta1.jpg" },
         esponjoso: { nombre: "Cupcake sencillo de vainilla o chocolate", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Chocolate caliente suave", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Chocolate caliente", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Chocobananos caseros", img: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" }
       },
       salado: {
         crujiente: { nombre: "Galletas saladas con queso", img: "https://images.unsplash.com/photo-1601050690597-cd7d24cae471?auto=format&fit=crop&w=600&q=80" },
         esponjoso: { nombre: "Muffin de queso suave", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Caldo suave o consomé", img: "https://images.unsplash.com/photo-1577401239487-5c6397c88f52?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Caldo suave", img: "https://images.unsplash.com/photo-1577401239487-5c6397c88f52?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Yogur salado con pepino rallado", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
       },
       refrescante: {
-        crujiente: { nombre: "Barquillo con crema de frutas", img: "https://images.unsplash.com/photo-1587498231662-cf42ca1ab8b8?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Barquillos con crema", img: "https://images.unsplash.com/photo-1587498231662-cf42ca1ab8b8?auto=format&fit=crop&w=600&q=80" },
         esponjoso: { nombre: "Pastel frío de gelatina y fruta", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
         bebida: { nombre: "Smoothie de fresa y plátano", img: "https://images.unsplash.com/photo-1588159343745-4450e16e7b8d?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Chocobananos caseros", img: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" }
+        frio: { nombre: "Paleta de frutas", img: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" }
       }
     },
     alegre: {
       dulce: {
-        crujiente: { nombre: "Churros crujientes con azúcar y canela", img: "https://images.unsplash.com/photo-1642513002954-69de1c4f47f2?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Rebanada de pastel esponjoso", img: "https://images.unsplash.com/photo-1603079657220-3b0b3d203b1c?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Churros con azúcar y canela", img: "https://images.unsplash.com/photo-1642513002954-69de1c4f47f2?auto=format&fit=crop&w=600&q=80" },
+        esponjoso: { nombre: "Rebanada de pastel de chocolate", img: "https://images.unsplash.com/photo-1603079657220-3b0b3d203b1c?auto=format&fit=crop&w=600&q=80" },
         bebida: { nombre: "Batido de leche con frutas", img: "https://images.unsplash.com/photo-1576402187878-974f38e5dd03?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Helado con chispitas", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
       },
       salado: {
-        crujiente: { nombre: "Palomitas dulces con caramelo o mantequilla", img: "https://images.unsplash.com/photo-1589718234183-1b64bb4d6404?auto=format&fit=crop&w=600&q=80" },
+        crujiente: { nombre: "Palomitas con mantequilla", img: "https://images.unsplash.com/photo-1589718234183-1b64bb4d6404?auto=format&fit=crop&w=600&q=80" },
         esponjoso: { nombre: "Panqueques con miel y frutas", img: "https://i.imgur.com/sXyfdPy.jpeg" },
         bebida: { nombre: "Limonada con toques de sal", img: "https://images.unsplash.com/photo-1572569511254-d8b72f1e69f3?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Mini sándwiches con queso crema", img: "https://images.unsplash.com/photo-1598511720301-7c7de97205e7?auto=format&fit=crop&w=600&q=80" }

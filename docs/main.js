@@ -280,6 +280,18 @@ function guardarEnFirestore(datos) {
   });
 }
 
+//footeer
+function actualizarVisibilidadFooter() {
+  const footer = document.getElementById('footer');
+  const visibles = Array.from(document.querySelectorAll('.question.active')).map(q => q.id);
+  
+  if (visibles.includes("q1") || visibles.includes("q2") || visibles.includes("q3") || visibles.includes("nombrePregunta")) {
+    footer.style.display = "none";
+  } else {
+    footer.style.display = "block";
+  }
+}
+
 
   
 

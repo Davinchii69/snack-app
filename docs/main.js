@@ -289,12 +289,11 @@ function guardarEnFirestore(datos) {
 function actualizarVisibilidadFooter() {
   const footer = document.getElementById('footer');
   const visibles = Array.from(document.querySelectorAll('.question.active')).map(q => q.id);
-  
-  if (visibles.includes("q1") || visibles.includes("q2") || visibles.includes("q3") || visibles.includes("nombrePregunta")) {
-    footer.style.display = "none";
-  } else {
-    footer.style.display = "block";
-  }
+
+  const preguntasOcultas = ["nombrePregunta", "q0", "q1", "q2", "q3"];
+  const debeOcultarse = visibles.some(id => preguntasOcultas.includes(id));
+
+  footer.style.display = debeOcultarse ? "none" : "block";
 }
 
 

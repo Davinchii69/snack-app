@@ -97,8 +97,8 @@ const snacks = {
       },
       refrescante: {
         crujiente: { nombre: "Fruta deshidratada helada", img: "https://images.unsplash.com/photo-1581382575301-8a1801a8d8d6?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Pastel de yogur frío", img: "https://images.unsplash.com/photo-1631121181902-d436a3d79042?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Agua con frutas (infusión)", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
+        esponjoso: { nombre: "Pastel de yogurt", img: "https://images.unsplash.com/photo-1631121181902-d436a3d79042?auto=format&fit=crop&w=600&q=80" },
+        bebida: { nombre: "Jugo de Horchata", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
         frio: { nombre: "Paleta de leche", img: "https://images.unsplash.com/photo-1610543436291-eae4a6192151?auto=format&fit=crop&w=600&q=80" }
       }
     },

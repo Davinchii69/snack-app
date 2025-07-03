@@ -65,15 +65,15 @@ const snacks = {
     triste: {
       dulce: {
         crujiente: { nombre: "Galletas con chispas de chocolate", img: "assets/galleta1.jpg" },
-        esponjoso: { nombre: "Cupcake sencillo de vainilla", img: "https://drive.google.com/file/d/1gKgLNXY662Oec2dnnqF4SC_hjV5ZvXnw/view" },
-        bebida: { nombre: "Chocolate caliente", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Chocobananos caseros", img: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" }
+        esponjoso: { nombre: "Cupcake sencillo de vainilla", img: "https://i.imgur.com/3pKLCn5.jpeg" },
+        bebida: { nombre: "Chocolate caliente", img: "https://i.imgur.com/qZXu5rQ.jpeg" },
+        frio: { nombre: "Chocobananos caseros", img: "https://i.imgur.com/6GCYuye.jpeg" }
       },
       salado: {
-        crujiente: { nombre: "Galletas saladas con queso", img: "https://images.unsplash.com/photo-1601050690597-cd7d24cae471?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Muffin de queso suave", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Caldo suave", img: "https://images.unsplash.com/photo-1577401239487-5c6397c88f52?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Yogur salado con pepino rallado", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Galletas saladas con queso", img: "https://i.imgur.com/Mu24h0W.png" },
+        esponjoso: { nombre: "Muffin de queso suave", img: "https://i.imgur.com/6BOLebp.jpeg" },
+        bebida: { nombre: "Caldo suave", img: "https://i.imgur.com/6YDygVA.jpeg" },
+        frio: { nombre: "Yogur salado con pepino rallado", img: "https://i.imgur.com/fxqyLuF.jpeg" }
       },
       refrescante: {
         crujiente: { nombre: "Barquillos con crema", img: "https://images.unsplash.com/photo-1587498231662-cf42ca1ab8b8?auto=format&fit=crop&w=600&q=80" },

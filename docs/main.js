@@ -17,6 +17,7 @@ function guardarNombre() {
   // Oculta esta pregunta y muestra q1
   document.getElementById("nombrePregunta").classList.remove("active");
   document.getElementById("q1").classList.add("active");
+  actualizarVisibilidadFooter();
 }
     
     let currentQuestion = 1;
@@ -41,6 +42,7 @@ function guardarNombre() {
     next.classList.add('active');
     currentQuestion++;
     document.getElementById('formSection').scrollIntoView({ behavior: 'smooth' });
+    actualizarVisibilidadFooter();
   }
 }
 
@@ -187,6 +189,8 @@ const snacks = {
   
     datosUsuario.snackFinal = resultado.nombre;
     guardarEnFirestore(datosUsuario);
+
+    actualizarVisibilidadFooter();
   }
 //fin
 
@@ -247,6 +251,7 @@ function irAlInicio() {
 
   // Alinear correctamente al volver
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  actualizarVisibilidadFooter();
 }
 
     // Smooth scrolling for navigation links

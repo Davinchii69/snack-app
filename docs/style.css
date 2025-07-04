@@ -459,7 +459,7 @@ header p {
       }
     }
 
-    /* Responsive design */
+    /* Responsive design kaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaajuju*/
     @media (max-width: 768px) {
       .nav-toggle {
         display: flex;
@@ -502,17 +502,17 @@ header p {
       }
 
       .question h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
 
       .option-box {
         display: block;
-        margin: 0.5rem auto;
+        margin: 0.4rem auto;
         max-width: 300px;
       }
 
       .result h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
       }
     }
 
@@ -723,7 +723,7 @@ header p {
 
 .footer-content p {
   margin: 0rem 0;
-  line-height: 1.5;
+  line-height: 1.1;
 }
     }
 

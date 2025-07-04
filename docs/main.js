@@ -178,11 +178,11 @@ const snacks = {
       <p>📍Recuerda: cuidar tu bienestar emocional también incluye momentos dulces y conscientes 💛</p>
     `;
   
-    const volverBtn = document.createElement('button');
-    volverBtn.textContent = '🔁 Volver a empezar';
-    volverBtn.className = 'button';
-    volverBtn.onclick = () => location.reload();
-    resultadoDiv.appendChild(volverBtn);
+   const volverBtn = document.createElement('button');
+   volverBtn.textContent = '🔁 Volver a empezar';
+   volverBtn.className = 'button';
+   volverBtn.onclick = irAlInicio; // 👈 Reemplazo correcto
+   resultadoDiv.appendChild(volverBtn);
   
     resultadoDiv.style.display = 'block';
     resultadoDiv.scrollIntoView({ behavior: 'smooth' });

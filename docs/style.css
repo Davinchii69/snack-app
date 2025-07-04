@@ -612,7 +612,7 @@ header p {
       }
 
       .option-box {
-        padding: 1rem;
+        padding: 0.5rem;/*gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
         font-size: 1rem;
 
         #startSection {

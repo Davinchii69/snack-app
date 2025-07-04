@@ -76,90 +76,90 @@ const snacks = {
         frio: { nombre: "Yogur salado con pepino rallado", img: "assets/yogurtpepinos.jpg" }
       },
       refrescante: {
-        crujiente: { nombre: "Barquillos con crema", img: "https://images.unsplash.com/photo-1587498231662-cf42ca1ab8b8?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Pastel frío de gelatina y fruta", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Smoothie de fresa y plátano", img: "https://images.unsplash.com/photo-1588159343745-4450e16e7b8d?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Paleta de frutas", img: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Barquillos con crema", img: "assets/barquillos.png" },
+        esponjoso: { nombre: "Pastel de gelatina y fruta", img: "assets/gelatina.jpg" },
+        bebida: { nombre: "Smoothie de fresa", img: "assets/smotiefresa.jpg" },
+        frio: { nombre: "Paleta de frutas", img: "assets/paletafrutas.png" }
       }
     },
     alegre: {
       dulce: {
-        crujiente: { nombre: "Churros con azúcar y canela", img: "https://images.unsplash.com/photo-1642513002954-69de1c4f47f2?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Rebanada de pastel de chocolate", img: "https://images.unsplash.com/photo-1603079657220-3b0b3d203b1c?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Batido de leche con frutas", img: "https://images.unsplash.com/photo-1576402187878-974f38e5dd03?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Helado con chispitas", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Churros con azúcar y canela", img: "assets/churros.png" },
+        esponjoso: { nombre: "Rebanada de pastel de chocolate", img: "assets/rebanadadepastel.png" },
+        bebida: { nombre: "Batido de leche con frutas", img: "assets/batidofrutas.png" },
+        frio: { nombre: "Helado con chispitas", img: "assets/heladochispitas.jpg" }
       },
       salado: {
-        crujiente: { nombre: "Palomitas con mantequilla", img: "https://images.unsplash.com/photo-1589718234183-1b64bb4d6404?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Empanadas", img: "https://i.imgur.com/sXyfdPy.jpeg" },
-        bebida: { nombre: "Limonada con toques de sal", img: "https://images.unsplash.com/photo-1572569511254-d8b72f1e69f3?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Mini sándwiches con queso crema", img: "https://images.unsplash.com/photo-1598511720301-7c7de97205e7?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Palomitas con mantequilla", img: "assets/palomitas.png" },
+        esponjoso: { nombre: "Empanadas", img: "assets/empanadas.png" },
+        bebida: { nombre: "Limonada con toques de sal", img: "assets/Limonadasal.png" },
+        frio: { nombre: "Mini sándwiches con queso crema", img: "assets/sandwichescrema.png" }
       },
       refrescante: {
-        crujiente: { nombre: "Fruta deshidratada helada", img: "https://images.unsplash.com/photo-1581382575301-8a1801a8d8d6?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Pastel de yogurt", img: "https://images.unsplash.com/photo-1631121181902-d436a3d79042?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Jugo de Horchata", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Paleta de leche", img: "https://images.unsplash.com/photo-1610543436291-eae4a6192151?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Fruta deshidratada helada", img: "assets/frutasdesidratadas.jpg" },
+        esponjoso: { nombre: "Pastel de yogurt", img: "assets/pasteldeyogur.png" },
+        bebida: { nombre: "Jugo de Horchata", img: "assets/horchata.png" },
+        frio: { nombre: "Paleta de leche", img: "assets/leche.png" }
       }
     },
     enojado: {
       salado: {
-        crujiente: { nombre: "Papas fritas caseras", img: "https://images.unsplash.com/photo-1606756796932-d9e5b0be7c0d?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Pan de ajo y queso", img: "https://images.unsplash.com/photo-1611066520394-648bb62d33d4?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Jugo de sandía con sal y chile", img: "https://images.unsplash.com/photo-1625940982222-19cddeba509b?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Helado de chamoy", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Papas fritas caseras", img: "assets/papas.png" },
+        esponjoso: { nombre: "Pan de ajo y queso", img: "assets/panajoqueso.jpg" },
+        bebida: { nombre: "Jugo de sandía con sal y chile", img: "assets/jugosandia.png" },
+        frio: { nombre: "Helado de chamoy", img: "assets/chamoy.png" }
       },
       dulce: {
-        crujiente: { nombre: "Galletas de avena", img: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Bizcocho de almendras", img: "https://images.unsplash.com/photo-1627616799764-3382d8d4e0b6?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Licuado de fresa", img: "https://images.unsplash.com/photo-1571997478779-2c46b1dbbfc9?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Yogurt de manzana", img: "https://images.unsplash.com/photo-1628191018703-dc0b6b9f5672?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Galletas de avena", img: "assets/avenagalleta.png" },
+        esponjoso: { nombre: "Bizcocho de almendras", img: "assets/bizcocho.png" },
+        bebida: { nombre: "Licuado de fresa", img: "assets/licuadofresa.png" },
+        frio: { nombre: "Yogurt de manzana", img: "assets/yogurtmanzana.png" }
       },
       refrescante: {
-        crujiente: { nombre: "Polvorones con relleno", img: "https://images.unsplash.com/photo-1612541443764-2fd0c15fcf1a?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Mousse frío de limón", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Agua de Jamaica con menta", img: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Ensalada de frutas", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Polvorones con relleno", img: "assets/polvorones.jpg" },
+        esponjoso: { nombre: "Mousse frío de limón", img: "assets/mouselimon.jpg" },
+        bebida: { nombre: "Agua de Jamaica con menta", img: "assets/aguajamaica.jpg" },
+        frio: { nombre: "Ensalada de frutas", img: "assets/Ensalada de frutas.jpg" }
       }
     },
     ansioso: {
       dulce: {
-        crujiente: { nombre: "Barrita de cereal con chocolate", img: "https://images.unsplash.com/photo-1589820296156-b74290ced394?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Cupcakes con chispitas", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Té con miel", img: "https://images.unsplash.com/photo-1607082349560-13b0fbf04b4d?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Waffles con crema", img: "https://images.unsplash.com/photo-1548943487-a2e4d1b046a2?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Barrita de cereal con chocolate", img: "assets/barritacereal.jpg" },
+        esponjoso: { nombre: "Cupcakes con chispitas", img: "assets/cupcakechispitas.jpg" },
+        bebida: { nombre: "Té con miel", img: "assets/temiel.jpg" },
+        frio: { nombre: "Waffles con crema", img: "assets/waffles.jpg" }
       },
       salado: {
-        crujiente: { nombre: "Tostadas de pan con aguacate", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Pastelitos de carne", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Licuado de pepino con sal", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Banderillas de jamón y queso", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Tostadas de pan con aguacate", img: "assets/tostadaguacate.jpg" },
+        esponjoso: { nombre: "Pastelitos de carne", img: "assets/pastelitoscarne.jpg" },
+        bebida: { nombre: "Licuado de pepino con sal", img: "assets/licuadopepino.png" },
+        frio: { nombre: "Banderillas de jamón y queso", img: "assets/banderillasjamonqueso.jpg" }
       },
       refrescante: {
-        crujiente: { nombre: "Tutti frutti", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Bizcocho de gelatina coon leche", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "licuado de piña", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Paleta de coco casera", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Tutti frutti", img: "assets/tutifruti.jpg" },
+        esponjoso: { nombre: "Bizcocho de gelatina con leche", img: "assets/gelatinamosaico.jpg" },
+        bebida: { nombre: "licuado de piña", img: "assets/licuadopiña.jpg" },
+        frio: { nombre: "Paleta de coco casera", img: "assets/paletacoco.jpg" }
       }
     },
     envidioso: {
       dulce: {
-        crujiente: { nombre: "Galletas de chocolate", img: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Relampagos", img: "https://images.unsplash.com/photo-1606857521015-7f7ab25d6f87?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Licuado de banano", img: "https://images.unsplash.com/photo-1576402187878-974f38e5dd03?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Flan casero", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Galletas de chocolate", img: "assets/galletaschocolate.jpg" },
+        esponjoso: { nombre: "Relampagos", img: "assets/relampago.jpg" },
+        bebida: { nombre: "Licuado de banano", img: "assets/platano.jpg" },
+        frio: { nombre: "Flan casero", img: "assets/flancasero.jpg" }
       },
       salado: {
-        crujiente: { nombre: "Pretzel", img: "https://images.unsplash.com/photo-1576186726115-4a47c0b5c2f4?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Muffins de queso", img: "https://images.unsplash.com/photo-1616529734032-8a1ffb1b6021?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Jugo de tomate con sal", img: "https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Rollitos de jamón y queso", img: "https://images.unsplash.com/photo-1590086782792-6a6b6d43a7b8?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Pretzel", img: "assets/pretzel.jpg" },
+        esponjoso: { nombre: "Muffins de queso", img: "assets/muffinqueso2.jpg" },
+        bebida: { nombre: "Jugo de tomate con sal", img: "assets/jugotomate.jpg" },
+        frio: { nombre: "Rollitos de jamón y queso", img: "assets/rollitosjamon.png" }
       },
       refrescante: {
-        crujiente: { nombre: "Galletas de manzana", img: "https://images.unsplash.com/photo-1581382575301-8a1801a8d8d6?auto=format&fit=crop&w=600&q=80" },
-        esponjoso: { nombre: "Rosca gelatina", img: "https://images.unsplash.com/photo-1623276524567-1632cc4c3c99?auto=format&fit=crop&w=600&q=80" },
-        bebida: { nombre: "Jugo de avena", img: "https://images.unsplash.com/photo-1575908522061-5d6bb6124571?auto=format&fit=crop&w=600&q=80" },
-        frio: { nombre: "Mousse de fruta", img: "https://images.unsplash.com/photo-1613140932237-58d6c727dcdc?auto=format&fit=crop&w=600&q=80" }
+        crujiente: { nombre: "Galletas de manzana", img: "assets/galletasmanzana.jpg" },
+        esponjoso: { nombre: "Pastel de gelatina con frutas", img: "pastelgelatina.jpg" },
+        bebida: { nombre: "Jugo de avena", img: "assets/jugoavena.jpg" },
+        frio: { nombre: "Mousse de fruta", img: "assets/mousefruta.jpg" }
       }
     }
   };

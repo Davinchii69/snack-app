@@ -490,11 +490,11 @@ header p {
       }
 
       header p {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
       }
 
       .container {
-        padding: 1rem;
+        padding: 1.5rem;
       }
 
       .section {
@@ -502,7 +502,7 @@ header p {
       }
 
       .question h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
 
       .option-box {
@@ -512,7 +512,7 @@ header p {
       }
 
       .result h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
       }
     }
 

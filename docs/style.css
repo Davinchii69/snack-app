@@ -494,7 +494,7 @@ header p {
       }
 
       .container {
-        padding: 1.5rem;
+        padding: 2rem;
       }
 
       .section {
@@ -507,7 +507,7 @@ header p {
 
       .option-box {
         display: block;
-        margin: 0.4rem auto;
+        margin: 0.8rem auto;
         max-width: 300px;
       }
 

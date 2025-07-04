@@ -366,7 +366,7 @@ header p {
       transform: translateY(0);
     }
 
-    /* Results */
+    /* Results snackkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
     .result {
       background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
@@ -379,9 +379,9 @@ header p {
     }
 
     .result h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #1f2937;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       font-weight: 700;
     }
 
@@ -389,7 +389,7 @@ header p {
       background: white;
       border-radius: 15px;
       padding: 1.5rem;
-      margin: 1.5rem auto;
+      margin: 1rem auto;
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
       max-width: 400px;
       transition: transform 0.3s ease;
@@ -417,7 +417,7 @@ header p {
     .result p {
       font-style: bold;
       font-size: 1.1rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
       color: #575656;
       line-height: 1.6;
     }

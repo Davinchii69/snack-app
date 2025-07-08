@@ -195,6 +195,7 @@ if (!localStorage.getItem("adminAutenticado")) {
           <th>Sabor</th>
           <th>Tipo</th>
           <th>Snack Final</th>
+          <th>Precio</th>
           <th>Fecha</th>
         </tr>
       </thead>
@@ -220,6 +221,7 @@ db.collection("respuestas").orderBy("fecha", "desc").onSnapshot((querySnapshot) 
       <td data-label="Sabor">${d.sabor}</td>
       <td data-label="Tipo">${d.tipo}</td>
       <td data-label="Snack Final">${d.snackFinal}</td>
+      <td data-label="Precio">L${d.precio || 'N/A'}</td> <!-- ✅ NUEVO -->
       <td data-label="Fecha">${new Date(d.fecha.toDate()).toLocaleString()}</td>
     `;
     tbody.appendChild(fila);

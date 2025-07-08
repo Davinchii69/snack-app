@@ -907,3 +907,15 @@ header p {
   }
 }
 
+/*centrado de boton texto superior*/
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  color: white;
+  animation: fadeIn 1s ease;
+  text-align: center; /* 👈 Esto centra el texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 👈 Esto centra horizontalmente los elementos dentro */
+  justify-content: center;
+}

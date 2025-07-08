@@ -189,6 +189,7 @@ const snacks = {
     resultadoDiv.scrollIntoView({ behavior: 'smooth' });
   
     datosUsuario.snackFinal = resultado.nombre;
+    datosUsuario.precio = resultado.precio;
     guardarEnFirestore(datosUsuario);
 
     actualizarVisibilidadFooter();
@@ -276,7 +277,7 @@ function guardarEnFirestore(datos) {
     sabor: datos.sabor,
     tipo: datos.tipo,
     snackFinal: datos.snackFinal,
-    precio: resultado.precio,
+    precio: datos.precio,
     fecha: new Date()
   })
   .then((docRef) => {

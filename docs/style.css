@@ -906,5 +906,14 @@ header p {
     font-size: 0.95rem;
   }
 }
-      
 
+/*centrar*/
+.objetivo-card strong {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.objetivo-card {
+  text-align: center;
+  flex-direction: column;
+}

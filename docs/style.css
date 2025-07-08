@@ -514,6 +514,7 @@ header p {
       .result h2 {
         font-size: 1.8rem;
       }
+    }
 
     .emociones-objetivos {
   display: grid;
@@ -589,39 +590,35 @@ header p {
   animation: slideDown 0.3s ease forwards;
 }
 
-          /*error 1*/
 .nav-links.closing {
   animation: slideUp 0.3s ease forwards;
 }
 
-/* ✅ ESTILOS PARA MÓVILES - max-width: 480px */
-@media (max-width: 480px) {
-  header {
-    padding: 2rem 1rem;
-  }
+    @media (max-width: 480px) {
+      header {
+        padding: 2rem 1rem;
+      }
 
-  header h1 {
-    font-size: 2rem;
-  }
+      header h1 {
+        font-size: 2rem;
+      }
 
-  .section {
-    padding: 1.5rem 1rem;
-  }
+      .section {
+        padding: 1.5rem 1rem;
+      }
 
-  .question h3 {
-    font-size: 1.3rem;
-  }
+      .question h3 {
+        font-size: 1.3rem;
+      }
 
-  .option-box {
-    padding: 1rem;
-    font-size: 1rem;
-    min-width: 120px;
-    display: block;
-    margin: 0.5rem auto;
-  }
+      .option-box {
+        padding: 1.5rem;/*gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg*/
+        font-size: 1rem;
 
+        #startSection {
+  margin: 2rem 0;
+}
 
-/* ✅ ESTILOS PARA TABLET O PC CON VENTANA REDUCIDA - max-width: 768px */
 @media (max-width: 768px) {
   #hero {
     align-items: flex-start;
@@ -638,8 +635,7 @@ header p {
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 0.8rem;
   }
-}
-/*cierre error1*/
+
   .objetivo-card {
   height: auto;
   padding: 1rem;
@@ -907,15 +903,3 @@ header p {
   }
 }
 
-/*centrado de boton texto superior*/
-.hero-content {
-  max-width: 700px;
-  margin: 0 auto;
-  color: white;
-  animation: fadeIn 1s ease;
-  text-align: center; /* 👈 Esto centra el texto */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* 👈 Esto centra horizontalmente los elementos dentro */
-  justify-content: center;
-}

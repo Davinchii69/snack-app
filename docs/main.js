@@ -276,6 +276,7 @@ function guardarEnFirestore(datos) {
     sabor: datos.sabor,
     tipo: datos.tipo,
     snackFinal: datos.snackFinal,
+    precio: resultado.precio,
     fecha: new Date()
   })
   .then((docRef) => {

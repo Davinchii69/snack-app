@@ -620,10 +620,6 @@ header p {
     margin: 0.5rem auto;
   }
 
-  #startSection {
-    margin: 2rem 0;
-  }
-}
 
 /* ✅ ESTILOS PARA TABLET O PC CON VENTANA REDUCIDA - max-width: 768px */
 @media (max-width: 768px) {

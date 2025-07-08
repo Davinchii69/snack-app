@@ -919,3 +919,15 @@ header p {
     padding-bottom: 0.2rem; /* Opcional: espacio abajo */
   }
 }
+
+/*precio*/
+.snack-card p strong {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #d97706;
+  background: #fff8dc;
+  padding: 0.4rem 0.8rem;
+  border-radius: 30px;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}

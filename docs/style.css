@@ -741,7 +741,7 @@ header p {
   #hero {
     min-height: 1vh;
     align-items: flex-start;
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
 }
 
@@ -751,7 +751,7 @@ header p {
   animation: fadeIn 1s ease;
 }
 
-/*parrafo y botonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+/*parrafo y 4d6F51WHf61AjoGx1cqqFE6ksHtCcir4gjdg1guX5mcV*/
 .hero-content h1 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -907,15 +907,15 @@ header p {
 /*pantallas espacioado boton, texto eslogan*/
 @media (min-width: 769px) {
   .hero-content h1 {
-    margin-bottom: 1.5rem; /* Espacio entre título y subtítulo en web */
+    margin-bottom: 1rem; /* Espacio entre título y subtítulo en web */
   }
 
   .hero-content p {
-    margin-bottom: 2.5rem; /* Espacio entre subtítulo y botón en web */
+    margin-bottom: 1rem; /* Espacio entre subtítulo y botón en web */
   }
 
   .hero-content {
-    padding-top: 3rem;   /* Separación arriba */
-    padding-bottom: 2rem; /* Opcional: espacio abajo */
+    padding-top: 1rem;   /* Separación arriba */
+    padding-bottom: 0.5rem; /* Opcional: espacio abajo */
   }
 }

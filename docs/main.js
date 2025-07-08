@@ -64,102 +64,102 @@ function mostrarResultado() {
 const snacks = {
     triste: {
       dulce: {
-        crujiente: { nombre: "Galletas con chispas de chocolate", img: "assets/galleta1.jpg" },
-        esponjoso: { nombre: "Cupcake sencillo de chocolate", img: "assets/cupcake.jpg" },
-        bebida: { nombre: "Chocolate caliente", img: "assets/chocolatecaliente.jpg" },
-        frio: { nombre: "Chocobananos caseros", img: "assets/chocobanano.jpg" }
+        crujiente: { nombre: "Galletas con chispas de chocolate", img: "assets/galleta1.jpg", precio: 15},
+        esponjoso: { nombre: "Cupcake sencillo de chocolate", img: "assets/cupcake.jpg", precio: 16 },
+        bebida: { nombre: "Chocolate caliente", img: "assets/chocolatecaliente.jpg", precio: 12},
+        frio: { nombre: "Chocobananos caseros", img: "assets/chocobanano.jpg", precio: 10}
       },
       salado: {
-        crujiente: { nombre: "Galletas saladas con queso", img: "assets/galletasqueso.png" },
-        esponjoso: { nombre: "Muffin de queso suave", img: "assets/muffinqueso.jpg" },
-        bebida: { nombre: "Caldo suave", img: "assets/caldosuave.jpg" },
-        frio: { nombre: "Yogur salado con pepino rallado", img: "assets/yogurtpepinos.jpg" }
+        crujiente: { nombre: "Galletas saladas con queso", img: "assets/galletasqueso.png", precio: 15 },
+        esponjoso: { nombre: "Muffin de queso suave", img: "assets/muffinqueso.jpg", precio: 16 },
+        bebida: { nombre: "Caldo suave", img: "assets/caldosuave.jpg", precio: 20 },
+        frio: { nombre: "Yogur salado con pepino rallado", img: "assets/yogurtpepinos.jpg", precio: 22 }
       },
       refrescante: {
-        crujiente: { nombre: "Barquillos con crema", img: "assets/barquillos.png" },
-        esponjoso: { nombre: "Pastel de gelatina y fruta", img: "assets/gelatina.jpg" },
-        bebida: { nombre: "Smoothie de fresa", img: "assets/smotiefresa.jpg" },
-        frio: { nombre: "Paleta de frutas", img: "assets/paletafrutas.png" }
+        crujiente: { nombre: "Barquillos con crema", img: "assets/barquillos.png", precio: 25 },
+        esponjoso: { nombre: "Pastel de gelatina y fruta", img: "assets/gelatina.jpg", precio: 30 },
+        bebida: { nombre: "Smoothie de fresa", img: "assets/smotiefresa.jpg", precio: 35 },
+        frio: { nombre: "Paleta de frutas", img: "assets/paletafrutas.png", precio: 15 }
       }
     },
     alegre: {
       dulce: {
-        crujiente: { nombre: "Churros con azúcar y canela", img: "assets/churros.png" },
-        esponjoso: { nombre: "Rebanada de pastel de chocolate", img: "assets/rebanadadepastel.png" },
-        bebida: { nombre: "Batido de leche con frutas", img: "assets/batidofrutas.png" },
-        frio: { nombre: "Helado con chispitas", img: "assets/heladochispitas.jpg" }
+        crujiente: { nombre: "Churros con azúcar y canela", img: "assets/churros.png", precio: 12 },
+        esponjoso: { nombre: "Rebanada de pastel de chocolate", img: "assets/rebanadadepastel.png", precio: 35 },
+        bebida: { nombre: "Batido de leche con frutas", img: "assets/batidofrutas.png", precio: 45 },
+        frio: { nombre: "Helado con chispitas", img: "assets/heladochispitas.jpg", precio: 30 }
       },
       salado: {
-        crujiente: { nombre: "Palomitas con mantequilla", img: "assets/palomitas.png" },
-        esponjoso: { nombre: "Empanadas", img: "assets/empanadas.png" },
-        bebida: { nombre: "Limonada con toques de sal", img: "assets/Limonadasal.png" },
-        frio: { nombre: "Mini sándwiches con queso crema", img: "assets/sandwichescrema.png" }
+        crujiente: { nombre: "Palomitas con mantequilla", img: "assets/palomitas.png", precio: 12 },
+        esponjoso: { nombre: "Empanadas", img: "assets/empanadas.png", precio: 12 },
+        bebida: { nombre: "Limonada con toques de sal", img: "assets/Limonadasal.png", precio: 15 },
+        frio: { nombre: "Mini sándwiches con queso crema", img: "assets/sandwichescrema.png", precio: 15 }
       },
       refrescante: {
-        crujiente: { nombre: "Fruta deshidratada helada", img: "assets/frutasdesidratadas.jpg" },
-        esponjoso: { nombre: "Pastel de yogurt", img: "assets/pasteldeyogur.png" },
-        bebida: { nombre: "Jugo de Horchata", img: "assets/horchata.png" },
-        frio: { nombre: "Paleta de leche", img: "assets/leche.png" }
+        crujiente: { nombre: "Fruta deshidratada helada", img: "assets/frutasdesidratadas.jpg", precio: 20 },
+        esponjoso: { nombre: "Pastel de yogurt", img: "assets/pasteldeyogur.png", precio: 35 },
+        bebida: { nombre: "Jugo de Horchata", img: "assets/horchata.png", precio: 15 },
+        frio: { nombre: "Paleta de leche", img: "assets/leche.png", precio: 10 }
       }
     },
     enojado: {
       salado: {
-        crujiente: { nombre: "Papas fritas caseras", img: "assets/papas.png" },
-        esponjoso: { nombre: "Pan de ajo y queso", img: "assets/panajoqueso.jpg" },
-        bebida: { nombre: "Jugo de sandía con sal y chile", img: "assets/jugosandia.png" },
-        frio: { nombre: "Helado de chamoy", img: "assets/chamoy.png" }
+        crujiente: { nombre: "Papas fritas caseras", img: "assets/papas.png", precio: 25 },
+        esponjoso: { nombre: "Pan de ajo y queso", img: "assets/panajoqueso.jpg", precio: 35 },
+        bebida: { nombre: "Jugo de sandía con sal y chile", img: "assets/jugosandia.png", precio: 20 },
+        frio: { nombre: "Helado de chamoy", img: "assets/chamoy.png", precio: 18 }
       },
       dulce: {
-        crujiente: { nombre: "Galletas de avena", img: "assets/avenagalleta.png" },
-        esponjoso: { nombre: "Bizcocho de almendras", img: "assets/bizcocho.png" },
-        bebida: { nombre: "Licuado de fresa", img: "assets/licuadofresa.png" },
-        frio: { nombre: "Yogurt de manzana", img: "assets/yogurtmanzana.png" }
+        crujiente: { nombre: "Galletas de avena", img: "assets/avenagalleta.png", precio: 15 },
+        esponjoso: { nombre: "Bizcocho de almendras", img: "assets/bizcocho.png", precio: 55 },
+        bebida: { nombre: "Licuado de fresa", img: "assets/licuadofresa.png", precio: 45 },
+        frio: { nombre: "Yogurt de manzana", img: "assets/yogurtmanzana.png", precio: 30 }
       },
       refrescante: {
-        crujiente: { nombre: "Polvorones con relleno", img: "assets/polvorones.jpg" },
-        esponjoso: { nombre: "Mousse frío de limón", img: "assets/mouselimon.jpg" },
-        bebida: { nombre: "Agua de Jamaica con menta", img: "assets/aguajamaica.jpg" },
-        frio: { nombre: "Ensalada de frutas", img: "assets/Ensalada de frutas.jpg" }
+        crujiente: { nombre: "Polvorones con relleno", img: "assets/polvorones.jpg", precio: 18 },
+        esponjoso: { nombre: "Mousse frío de limón", img: "assets/mouselimon.jpg", precio: 35 },
+        bebida: { nombre: "Agua de Jamaica con menta", img: "assets/aguajamaica.jpg", precio: 20 },
+        frio: { nombre: "Ensalada de frutas", img: "assets/Ensalada de frutas.jpg", precio: 40 }
       }
     },
     ansioso: {
       dulce: {
-        crujiente: { nombre: "Barrita de cereal con chocolate", img: "assets/barritacereal.jpg" },
-        esponjoso: { nombre: "Cupcakes con chispitas", img: "assets/cupcakechispitas.jpg" },
-        bebida: { nombre: "Té con miel", img: "assets/temiel.jpg" },
-        frio: { nombre: "Waffles con crema", img: "assets/waffles.jpg" }
+        crujiente: { nombre: "Barrita de cereal con chocolate", img: "assets/barritacereal.jpg", precio: 20 },
+        esponjoso: { nombre: "Cupcakes con chispitas", img: "assets/cupcakechispitas.jpg", precio: 22 },
+        bebida: { nombre: "Té con miel", img: "assets/temiel.jpg", precio: 20 },
+        frio: { nombre: "Waffles con crema", img: "assets/waffles.jpg", precio: 85 }
       },
       salado: {
-        crujiente: { nombre: "Tostadas de pan con aguacate", img: "assets/tostadaguacate.jpg" },
-        esponjoso: { nombre: "Pastelitos de carne", img: "assets/pastelitoscarne.jpg" },
-        bebida: { nombre: "Licuado de pepino con sal", img: "assets/licuadopepino.png" },
-        frio: { nombre: "Banderillas de jamón y queso", img: "assets/banderillasjamonqueso.jpg" }
+        crujiente: { nombre: "Tostadas de pan con aguacate", img: "assets/tostadaguacate.jpg", precio: 28 },
+        esponjoso: { nombre: "Pastelitos de carne", img: "assets/pastelitoscarne.jpg", precio: 15 },
+        bebida: { nombre: "Licuado de pepino con sal", img: "assets/licuadopepino.png", precio: 38 },
+        frio: { nombre: "Banderillas de jamón y queso", img: "assets/banderillasjamonqueso.jpg", precio: 20 }
       },
       refrescante: {
-        crujiente: { nombre: "Tutti frutti", img: "assets/tutifruti.jpg" },
-        esponjoso: { nombre: "Bizcocho de gelatina con leche", img: "assets/gelatinamosaico.jpg" },
-        bebida: { nombre: "licuado de piña", img: "assets/licuadopiña.jpg" },
-        frio: { nombre: "Paleta de coco casera", img: "assets/paletacoco.jpg" }
+        crujiente: { nombre: "Tutti frutti", img: "assets/tutifruti.jpg", precio: 45 },
+        esponjoso: { nombre: "Bizcocho de gelatina con leche", img: "assets/gelatinamosaico.jpg", precio: 60 },
+        bebida: { nombre: "licuado de piña", img: "assets/licuadopiña.jpg", precio: 48 },
+        frio: { nombre: "Paleta de coco casera", img: "assets/paletacoco.jpg", precio: 12 }
       }
     },
     envidioso: {
       dulce: {
-        crujiente: { nombre: "Galletas de chocolate", img: "assets/galletaschocolate.jpg" },
-        esponjoso: { nombre: "Relampagos", img: "assets/relampago.jpg" },
-        bebida: { nombre: "Licuado de banano", img: "assets/platano.jpg" },
-        frio: { nombre: "Flan casero", img: "assets/flancasero.jpg" }
+        crujiente: { nombre: "Galletas de chocolate", img: "assets/galletaschocolate.jpg", precio: 18 },
+        esponjoso: { nombre: "Relampagos", img: "assets/relampago.jpg", precio: 25 },
+        bebida: { nombre: "Licuado de banano", img: "assets/platano.jpg", precio: 48 },
+        frio: { nombre: "Flan casero", img: "assets/flancasero.jpg", precio: 30 }
       },
       salado: {
-        crujiente: { nombre: "Pretzel", img: "assets/pretzel.jpg" },
-        esponjoso: { nombre: "Muffins de queso", img: "assets/muffinqueso2.jpg" },
-        bebida: { nombre: "Jugo de tomate con sal", img: "assets/jugotomate.jpg" },
-        frio: { nombre: "Rollitos de jamón y queso", img: "assets/rollitosjamon.png" }
+        crujiente: { nombre: "Pretzel", img: "assets/pretzel.jpg", precio: 20 },
+        esponjoso: { nombre: "Muffins de queso", img: "assets/muffinqueso2.jpg", precio: 28 },
+        bebida: { nombre: "Jugo de tomate con sal", img: "assets/jugotomate.jpg", precio: 35 },
+        frio: { nombre: "Rollitos de jamón y queso", img: "assets/rollitosjamon.png", precio: 40 }
       },
       refrescante: {
-        crujiente: { nombre: "Galletas de manzana", img: "assets/galletasmanzana.jpg" },
-        esponjoso: { nombre: "Pastel de gelatina con frutas", img: "pastelgelatina.jpg" },
-        bebida: { nombre: "Jugo de avena", img: "assets/jugoavena.jpg" },
-        frio: { nombre: "Mousse de fruta", img: "assets/mousefruta.jpg" }
+        crujiente: { nombre: "Galletas de manzana", img: "assets/galletasmanzana.jpg", precio: 22 },
+        esponjoso: { nombre: "Pastel de gelatina con frutas", img: "pastelgelatina.jpg", precio: 45 },
+        bebida: { nombre: "Jugo de avena", img: "assets/jugoavena.jpg", precio: 22 },
+        frio: { nombre: "Mousse de fruta", img: "assets/mousefruta.jpg", precio: 40 }
       }
     }
   };
@@ -169,14 +169,15 @@ const snacks = {
     const resultadoDiv = document.getElementById('resultado');
     document.getElementById('formSection').style.display = 'none';
   
-    resultadoDiv.innerHTML = `
-      <h2>🎉 Tu snack ideal es:</h2>
-      <div class="snack-card">
-        <img src="${resultado.img}" alt="${resultado.nombre}" loading="lazy">
-        <h3>${resultado.nombre}</h3>
-      </div>
-      <p>📍Recuerda: cuidar tu bienestar emocional también incluye momentos dulces y conscientes 💛</p>
-    `;
+  resultadoDiv.innerHTML = `
+  <h2>🎉 Tu snack ideal es:</h2>
+  <div class="snack-card">
+    <img src="${resultado.img}" alt="${resultado.nombre}" loading="lazy">
+    <h3>${resultado.nombre}</h3>
+    <p><strong>Precio: L${resultado.precio}</strong></p>
+  </div>
+  <p>📍Recuerda: cuidar tu bienestar emocional también incluye momentos dulces y conscientes 💛</p>
+`;
   
    const volverBtn = document.createElement('button');
    volverBtn.textContent = '🔁 Volver a empezar';
@@ -297,9 +298,3 @@ function actualizarVisibilidadFooter() {
 
   footer.style.display = algunaVisible ? "none" : "block";
 }
-
-  
-
-
-
- 
